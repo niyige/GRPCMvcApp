@@ -22,8 +22,8 @@
  2  调用获取数据的方法
  DataManage.getInstance().SayHello("xxxx", callBack);  
  
- SayHello方法：#
- public GrpcAsyncTask<String, Void, HelloResponse> SayHello(final String mMessage, CallBack callBack) {
+ SayHello详细方法：
+     public GrpcAsyncTask<String, Void, HelloResponse> SayHello(final String mMessage, CallBack callBack) {
         return new GrpcAsyncTask<String, Void, HelloResponse>(callBack) {
             @Override
             protected HelloResponse doRequestData(ManagedChannel channel) {
@@ -41,7 +41,7 @@
             }
         }.doExecute();
     }
-  
+ 
  
  3  callback的调用时机：
     

@@ -23,7 +23,14 @@
  DataManage.getInstance().SayHello("xxxx", callBack);  
  
  SayHello详细方法：
-     public GrpcAsyncTask<String, Void, HelloResponse> SayHello(final String mMessage, CallBack callBack) {
+ 
+     /**
+     * 测试方法
+     *
+     * @param mMessage
+     * @return
+     */
+    public GrpcAsyncTask<String, Void, HelloResponse> SayHello(final String mMessage, CallBack callBack) {
         return new GrpcAsyncTask<String, Void, HelloResponse>(callBack) {
             @Override
             protected HelloResponse doRequestData(ManagedChannel channel) {

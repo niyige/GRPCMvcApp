@@ -1,6 +1,6 @@
 # GRPCMvcApp
 一个用MVC模式封装的GRPC网络调用
-参考：
+# 以下是重要代码：
 1  Activity里面 初始化callback
 
     public void initCallBack() {
